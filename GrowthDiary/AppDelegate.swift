@@ -12,6 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    open class var shared:AppDelegate{
+        get {
+            return UIApplication.shared.delegate as! AppDelegate
+        }
+    }
+    
+    func next() {
+        //print("app")
+        toLogin()
+    }
+    
+    func toLogin(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "Login")
+        window?.rootViewController = controller
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
