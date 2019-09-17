@@ -52,7 +52,7 @@ class LoginController: UIViewController {
             //保存登录状态
             PreferenceUtil.setLogin(true)
             //登录成功,进入首页
-            AppDelegate.shared.toHome()
+            AppDelegate.shared.next()
         }
         else{
             //登录失败

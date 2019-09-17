@@ -10,6 +10,12 @@ import UIKit
 
 class HomeController: UIViewController {
 
+    
+    @IBAction func onLogoutClick(_ sender: Any) {
+        PreferenceUtil.setLogin(false)
+        //登录成功,进入首页
+        AppDelegate.shared.next()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

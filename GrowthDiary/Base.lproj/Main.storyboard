@@ -122,15 +122,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-Za-We7">
-                                <rect key="frame" x="172" y="371" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USL-vN-hgV">
+                                <rect key="frame" x="20" y="44" width="31" height="30"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <action selector="onLogoutClick:" destination="NWm-mf-fGX" eventType="touchUpInside" id="Eg2-aa-pSU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="USL-vN-hgV" firstAttribute="leading" secondItem="8kK-2y-Mh5" secondAttribute="leading" constant="20" id="c1i-j8-mXK"/>
+                            <constraint firstItem="USL-vN-hgV" firstAttribute="top" secondItem="8kK-2y-Mh5" secondAttribute="top" id="dfL-Nc-sdW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8kK-2y-Mh5"/>
                     </view>
                 </viewController>
