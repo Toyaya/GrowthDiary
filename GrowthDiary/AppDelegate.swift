@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  GrowthDiary
-//
+//  应用代理类，全局一个
 //  Created by Toya Sakurai on 2019/9/16.
 //  Copyright © 2019 Toya Sakurai. All rights reserved.
 //
@@ -20,13 +20,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func next() {
         //print("app")
-        toLogin()
+        if PreferenceUtil.isLogin(){
+            toHome()
+        }
+        else{
+            toLogin()
+        }
     }
     
     func toLogin(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "Login")
         window?.rootViewController = controller
+    }
+    
+    //跳转到首页
+    func toHome(){
+        //print("Appdelegate toHome")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "Home")
+        window!.rootViewController = controller
     }
 
 

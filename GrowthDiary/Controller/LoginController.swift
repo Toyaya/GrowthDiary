@@ -22,7 +22,47 @@ class LoginController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func onLoginClick(_ sender: Any) {
+        //print("logincontroller login")
+        
+        let username = tfUsername.text
+        if username!.isEmpty{
+            lbInfo.text = "请输入邮箱"
+            return
+        }
+        //guard 和if是相反的
+        guard username!.isEmail() else{
+            lbInfo.text = "邮箱格式不正确!"
+            return
+        }
+        
+        let password = tfPassword.text!//这里解包过了，下面不用再次解包
+        if password.isEmpty{
+            lbInfo.text = "请输入密码(6-15位)"
+            return
+        }
+        guard password.isPassword() else{
+            lbInfo.text = "密码格式不正确!"
+            return
+        }
+        
+        //调用登录接口,本地登录
+        if USERNAME == username && PASSWORD == password{
+            //保存登录状态
+            PreferenceUtil.setLogin(true)
+            //登录成功,进入首页
+            AppDelegate.shared.toHome()
+        }
+        else{
+            //登录失败
+            lbInfo.text = "用户名或密码错误!"
+            
+        }
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 

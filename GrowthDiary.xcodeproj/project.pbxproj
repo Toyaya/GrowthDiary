@@ -15,6 +15,10 @@
 		80713FF1232F23F100A7C3C5 /* GrowthDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FF0232F23F100A7C3C5 /* GrowthDiaryUITests.swift */; };
 		80714001232F24B700A7C3C5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FFF232F24B700A7C3C5 /* LoginController.swift */; };
 		80714002232F24B700A7C3C5 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714000232F24B700A7C3C5 /* SplashController.swift */; };
+		807260FD2330671100A30FF5 /* StringExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807260FC2330671100A30FF5 /* StringExtend.swift */; };
+		807261022330684E00A30FF5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807261012330684E00A30FF5 /* Constant.swift */; };
+		8072610423306DE800A30FF5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072610323306DE800A30FF5 /* HomeController.swift */; };
+		807261062330702D00A30FF5 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807261052330702D00A30FF5 /* PreferenceUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		80713FF2232F23F100A7C3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80713FFF232F24B700A7C3C5 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		80714000232F24B700A7C3C5 /* SplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		807260FC2330671100A30FF5 /* StringExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtend.swift; sourceTree = "<group>"; };
+		807261012330684E00A30FF5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8072610323306DE800A30FF5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		807261052330702D00A30FF5 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreferenceUtil.swift; path = GrowthDiary/Extend/PreferenceUtil.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		80713FCF232F23F000A7C3C5 /* GrowthDiary */ = {
 			isa = PBXGroup;
 			children = (
+				807260FE233067EC00A30FF5 /* Util */,
+				807260FB233066A200A30FF5 /* Extend */,
 				80713FFE232F244500A7C3C5 /* Controller */,
 				80713FD0232F23F000A7C3C5 /* AppDelegate.swift */,
 				80713FD4232F23F000A7C3C5 /* Main.storyboard */,
@@ -132,8 +142,26 @@
 			children = (
 				80713FFF232F24B700A7C3C5 /* LoginController.swift */,
 				80714000232F24B700A7C3C5 /* SplashController.swift */,
+				8072610323306DE800A30FF5 /* HomeController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		807260FB233066A200A30FF5 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				807260FC2330671100A30FF5 /* StringExtend.swift */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		807260FE233067EC00A30FF5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				807261012330684E00A30FF5 /* Constant.swift */,
+				807261052330702D00A30FF5 /* PreferenceUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807260FD2330671100A30FF5 /* StringExtend.swift in Sources */,
 				80714002232F24B700A7C3C5 /* SplashController.swift in Sources */,
+				807261062330702D00A30FF5 /* PreferenceUtil.swift in Sources */,
+				8072610423306DE800A30FF5 /* HomeController.swift in Sources */,
+				807261022330684E00A30FF5 /* Constant.swift in Sources */,
 				80714001232F24B700A7C3C5 /* LoginController.swift in Sources */,
 				80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */,
 			);
