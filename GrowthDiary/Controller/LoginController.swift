@@ -16,15 +16,27 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var tfPassword: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+    }
+    
+    //点击空白处关闭键盘方法
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            //print("收回键盘")
+            self.tfUsername.resignFirstResponder()//username放弃第一响应者
+            self.tfPassword.resignFirstResponder()//password放弃第一响应者
+        }
+        sender.cancelsTouchesInView = false
     }
     
     
     @IBAction func onLoginClick(_ sender: Any) {
         //print("logincontroller login")
+        print("keyboard")
         
         let username = tfUsername.text
         if username!.isEmpty{
