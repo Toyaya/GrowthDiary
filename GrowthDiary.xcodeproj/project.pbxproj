@@ -19,6 +19,8 @@
 		807261022330684E00A30FF5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807261012330684E00A30FF5 /* Constant.swift */; };
 		8072610423306DE800A30FF5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072610323306DE800A30FF5 /* HomeController.swift */; };
 		807261062330702D00A30FF5 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807261052330702D00A30FF5 /* PreferenceUtil.swift */; };
+		8072615D2331C37C00A30FF5 /* MimiListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072615C2331C37C00A30FF5 /* MimiListController.swift */; };
+		8072615F2331C39400A30FF5 /* GungunListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072615E2331C39400A30FF5 /* GungunListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		807261012330684E00A30FF5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		8072610323306DE800A30FF5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		807261052330702D00A30FF5 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreferenceUtil.swift; path = GrowthDiary/Extend/PreferenceUtil.swift; sourceTree = SOURCE_ROOT; };
+		8072615C2331C37C00A30FF5 /* MimiListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimiListController.swift; sourceTree = "<group>"; };
+		8072615E2331C39400A30FF5 /* GungunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GungunListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				80713FFF232F24B700A7C3C5 /* LoginController.swift */,
+				8072615E2331C39400A30FF5 /* GungunListController.swift */,
 				80714000232F24B700A7C3C5 /* SplashController.swift */,
 				8072610323306DE800A30FF5 /* HomeController.swift */,
+				8072615C2331C37C00A30FF5 /* MimiListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,12 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				807260FD2330671100A30FF5 /* StringExtend.swift in Sources */,
+				8072615F2331C39400A30FF5 /* GungunListController.swift in Sources */,
 				80714002232F24B700A7C3C5 /* SplashController.swift in Sources */,
 				807261062330702D00A30FF5 /* PreferenceUtil.swift in Sources */,
 				8072610423306DE800A30FF5 /* HomeController.swift in Sources */,
 				807261022330684E00A30FF5 /* Constant.swift in Sources */,
 				80714001232F24B700A7C3C5 /* LoginController.swift in Sources */,
 				80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */,
+				8072615D2331C37C00A30FF5 /* MimiListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

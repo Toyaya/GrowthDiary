@@ -9,17 +9,41 @@
 import UIKit
 
 class HomeController: UIViewController {
+    //pets button关联
+    @IBOutlet weak var mimiButton: UIImageView!
+    
+    @IBOutlet weak var gungunButton: UIImageView!
+    
+    
+    //pets选择
+    @objc func mimiClick(){
+        AppDelegate.shared.toMimi()
+        
+    }
+    
+    @objc func gungunClick(){
+        AppDelegate.shared.toGungun()
+        
+    }
 
     
-    @IBAction func onLogoutClick(_ sender: Any) {
-        PreferenceUtil.setLogin(false)
-        //登录成功,进入首页
-        AppDelegate.shared.next()
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //设置导航栏标题
+        navigationItem.title = "GrowthDiary"
         // Do any additional setup after loading the view.
+        let mimiTap = UITapGestureRecognizer(target: self, action: #selector(mimiClick))
+        mimiButton.isUserInteractionEnabled = true
+        mimiButton.addGestureRecognizer(mimiTap)
+        
+        let gungunTap = UITapGestureRecognizer(target: self, action: #selector(gungunClick))
+        gungunButton.isUserInteractionEnabled = true
+        gungunButton.addGestureRecognizer(gungunTap)
+        
+        
+        
+        
     }
     
 

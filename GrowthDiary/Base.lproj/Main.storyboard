@@ -122,28 +122,139 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USL-vN-hgV">
-                                <rect key="frame" x="20" y="44" width="31" height="30"/>
-                                <state key="normal" title="登出"/>
-                                <connections>
-                                    <action selector="onLogoutClick:" destination="NWm-mf-fGX" eventType="touchUpInside" id="Eg2-aa-pSU"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="弥弥" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-OO-Qqv">
+                                <rect key="frame" x="19" y="128" width="374" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220.99999999999955" id="6Kb-44-smB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gungun" translatesAutoresizingMaskIntoConstraints="NO" id="fFG-FI-6yu">
+                                <rect key="frame" x="19" y="445" width="374" height="265"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="弥 弥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2c-Tb-eHW">
+                                <rect key="frame" x="185" y="319" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.86174970865249634" green="0.63769930601119995" blue="0.57469767332077026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="滚 滚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-1p-EOz">
+                                <rect key="frame" x="185" y="674" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="USL-vN-hgV" firstAttribute="leading" secondItem="8kK-2y-Mh5" secondAttribute="leading" constant="20" id="c1i-j8-mXK"/>
-                            <constraint firstItem="USL-vN-hgV" firstAttribute="top" secondItem="8kK-2y-Mh5" secondAttribute="top" id="dfL-Nc-sdW"/>
+                            <constraint firstItem="fFG-FI-6yu" firstAttribute="centerX" secondItem="hjS-1p-EOz" secondAttribute="centerX" id="1Pk-fJ-yth"/>
+                            <constraint firstItem="hjS-1p-EOz" firstAttribute="leading" secondItem="R2c-Tb-eHW" secondAttribute="leading" id="3oo-j7-b6W"/>
+                            <constraint firstItem="hd1-OO-Qqv" firstAttribute="centerX" secondItem="R2c-Tb-eHW" secondAttribute="centerX" id="6xO-gz-bxw"/>
+                            <constraint firstItem="hjS-1p-EOz" firstAttribute="leading" secondItem="8kK-2y-Mh5" secondAttribute="leading" constant="185" id="IFy-tL-1OE"/>
+                            <constraint firstItem="8kK-2y-Mh5" firstAttribute="trailing" secondItem="hd1-OO-Qqv" secondAttribute="trailing" constant="21.000000000000455" id="Kaa-UK-JI5"/>
+                            <constraint firstItem="hjS-1p-EOz" firstAttribute="centerX" secondItem="hd1-OO-Qqv" secondAttribute="centerX" id="KrL-vr-Vy3"/>
+                            <constraint firstItem="8kK-2y-Mh5" firstAttribute="bottom" secondItem="fFG-FI-6yu" secondAttribute="bottom" constant="152" id="LLd-MA-aMN"/>
+                            <constraint firstItem="hd1-OO-Qqv" firstAttribute="top" secondItem="8kK-2y-Mh5" secondAttribute="top" constant="84" id="Nbs-6v-3nY"/>
+                            <constraint firstItem="R2c-Tb-eHW" firstAttribute="top" secondItem="8kK-2y-Mh5" secondAttribute="top" constant="275" id="XoD-fE-ulD"/>
+                            <constraint firstItem="hd1-OO-Qqv" firstAttribute="leading" secondItem="8kK-2y-Mh5" secondAttribute="leading" constant="19" id="cEg-yq-Pl6"/>
+                            <constraint firstItem="fFG-FI-6yu" firstAttribute="top" secondItem="hd1-OO-Qqv" secondAttribute="bottom" constant="96.000000000000455" id="qE5-75-F5I"/>
+                            <constraint firstItem="8kK-2y-Mh5" firstAttribute="bottom" secondItem="hjS-1p-EOz" secondAttribute="bottom" constant="167" id="qG0-Cg-LxK"/>
+                            <constraint firstItem="fFG-FI-6yu" firstAttribute="leading" secondItem="hd1-OO-Qqv" secondAttribute="leading" id="zkM-5K-VpL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8kK-2y-Mh5"/>
                     </view>
+                    <connections>
+                        <outlet property="gungunButton" destination="fFG-FI-6yu" id="mT2-V7-wT4"/>
+                        <outlet property="mimiButton" destination="hd1-OO-Qqv" id="qkB-ad-Rr8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW9-r3-Zbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="23"/>
+            <point key="canvasLocation" x="1577" y="23"/>
+        </scene>
+        <!--Gungun List Controller-->
+        <scene sceneID="qtL-sy-Uaq">
+            <objects>
+                <viewController storyboardIdentifier="Gungun" id="Chb-jg-IT0" customClass="GungunListController" customModule="GrowthDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZs-ze-LpM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NNi-lV-Ens"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mac-xl-wsy">
+                        <barButtonItem key="rightBarButtonItem" title="登出" id="KrQ-w3-rXc">
+                            <connections>
+                                <action selector="onLogoutClick:" destination="Chb-jg-IT0" id="ukQ-kT-qB4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2n-Jb-3gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="376"/>
+        </scene>
+        <!--Mimi List Controller-->
+        <scene sceneID="ncZ-N2-yfw">
+            <objects>
+                <viewController storyboardIdentifier="Mimi" id="lOg-jp-hsI" customClass="mimiListController" customModule="GrowthDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qv7-9E-d8t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h9h-g1-vDH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QDp-8m-ScX">
+                        <barButtonItem key="rightBarButtonItem" title="登出" id="FAp-d8-o71">
+                            <connections>
+                                <action selector="onLogoutClick:" destination="lOg-jp-hsI" id="RUR-tV-owU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iS-MH-B1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="-353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hcr-SA-mi3">
+            <objects>
+                <navigationController storyboardIdentifier="MimiNav" automaticallyAdjustsScrollViewInsets="NO" id="BYs-Eg-a3l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rjD-23-Pms">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lOg-jp-hsI" kind="relationship" relationship="rootViewController" id="Kii-Fz-k1x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhC-hZ-al2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3120" y="-354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PlG-nO-zPk">
+            <objects>
+                <navigationController storyboardIdentifier="GungunNav" automaticallyAdjustsScrollViewInsets="NO" id="g6a-4t-MSL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3gQ-5s-LM5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Chb-jg-IT0" kind="relationship" relationship="rootViewController" id="PXR-yp-Wg0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbM-7Q-GZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3119" y="376"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gungun" width="994" height="985"/>
         <image name="mimi" width="1772" height="1772"/>
+        <image name="弥弥" width="1772" height="1772"/>
     </resources>
 </document>

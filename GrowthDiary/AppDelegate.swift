@@ -41,10 +41,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = storyboard.instantiateViewController(withIdentifier: "Home")
         window!.rootViewController = controller
     }
+    
+    func toMimi(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MimiNav")
+        window!.rootViewController = controller
+    }
+    
+    func toGungun(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "GungunNav")
+        window!.rootViewController = controller
+    }
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Thread.sleep(forTimeInterval: 3.0)
         return true
     }
 

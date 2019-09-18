@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="204" id="rZV-8l-JPw"/>
                                 </constraints>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hza-gv-SEd">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hza-gv-SEd">
                                 <rect key="frame" x="197" y="687" width="20" height="20"/>
                                 <color key="color" red="0.86174970865249634" green="0.63769930601119995" blue="0.57469767332077026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
