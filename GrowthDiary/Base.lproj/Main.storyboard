@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mimi" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-JY-Hes">
-                                <rect key="frame" x="128" y="114" width="160.00000000000045" height="160.00000000000045"/>
+                                <rect key="frame" x="128" y="114" width="160" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="159.99999999999955" id="Np2-SD-9Jr"/>
                                     <constraint firstAttribute="height" constant="159.99999999999955" id="SG3-dU-mfX"/>
@@ -68,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-uA-wg8">
-                                <rect key="frame" x="133" y="524" width="154" height="98"/>
+                                <rect key="frame" x="133" y="524" width="154" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="登 录"/>
                                 <connections>
@@ -85,7 +85,6 @@
                             <constraint firstItem="EKe-uA-wg8" firstAttribute="centerX" secondItem="A8g-jF-IL4" secondAttribute="centerX" constant="3" id="A2Q-ry-JTr"/>
                             <constraint firstItem="EKe-uA-wg8" firstAttribute="leading" secondItem="gEE-zc-fGt" secondAttribute="leading" constant="133" id="ADA-Tv-lOn"/>
                             <constraint firstItem="x8f-JY-Hes" firstAttribute="top" secondItem="gEE-zc-fGt" secondAttribute="top" constant="70" id="Bed-iW-bya"/>
-                            <constraint firstItem="gEE-zc-fGt" firstAttribute="bottom" secondItem="EKe-uA-wg8" secondAttribute="bottom" constant="240" id="GoO-69-8hL"/>
                             <constraint firstItem="Iv8-27-0pM" firstAttribute="leading" secondItem="gEE-zc-fGt" secondAttribute="leading" constant="25" id="HoV-dU-Npp"/>
                             <constraint firstItem="Iv8-27-0pM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="A8g-jF-IL4" secondAttribute="leading" id="OPC-b1-Kph"/>
                             <constraint firstItem="gEE-zc-fGt" firstAttribute="trailing" secondItem="A8g-jF-IL4" secondAttribute="trailing" constant="25" id="PYF-Dw-Eqt"/>
@@ -119,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="弥弥" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-OO-Qqv">
-                                <rect key="frame" x="19" y="128" width="374.00000000000045" height="221.00000000000045"/>
+                                <rect key="frame" x="19" y="128" width="374" height="221"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220.99999999999955" id="6Kb-44-smB"/>
                                 </constraints>

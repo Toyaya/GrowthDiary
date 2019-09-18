@@ -36,7 +36,7 @@ class LoginController: UIViewController {
     
     @IBAction func onLoginClick(_ sender: Any) {
         //print("logincontroller login")
-        print("keyboard")
+        //print("keyboard")
         
         let username = tfUsername.text
         if username!.isEmpty{
