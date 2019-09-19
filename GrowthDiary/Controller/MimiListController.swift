@@ -9,6 +9,7 @@
 import UIKit
 
 class mimiListController: UIViewController {
+    
     @IBAction func onLogoutClick(_ sender: Any) {
         let controller = UIAlertController(title: "提示", message: "你确定退出吗？", preferredStyle: .alert)
         
@@ -28,10 +29,26 @@ class mimiListController: UIViewController {
         present(controller,animated: true,completion: nil)
     }
     
+    //列表控件
+    @IBOutlet weak var tableView: UITableView!
+    var dataArray:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "弥弥"
+        //设置列表数据源和代理
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        //添加图片
+        for index in 1...27{
+            dataArray.append("\(index)")
+        }
+        
+        //让列表重新加载数据
+        tableView.reloadData()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     //退出
@@ -51,4 +68,24 @@ class mimiListController: UIViewController {
     }
     */
 
+}
+
+extension mimiListController:UITableViewDataSource,UITableViewDelegate{
+    //返回总数
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
+    }
+    //返回当前位置的cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! imageCell
+        
+        //绑定数据
+        cell.bindData(dataArray[indexPath.row])
+        
+        
+        //返回Cell
+        return cell
+    }
+    
+    
 }

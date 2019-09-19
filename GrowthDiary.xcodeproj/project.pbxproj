@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FD0232F23F000A7C3C5 /* AppDelegate.swift */; };
 		80713FD6232F23F000A7C3C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80713FD4232F23F000A7C3C5 /* Main.storyboard */; };
-		80713FD8232F23F000A7C3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80713FD7232F23F000A7C3C5 /* Assets.xcassets */; };
 		80713FDB232F23F000A7C3C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80713FD9232F23F000A7C3C5 /* LaunchScreen.storyboard */; };
 		80713FE6232F23F000A7C3C5 /* GrowthDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FE5232F23F000A7C3C5 /* GrowthDiaryTests.swift */; };
 		80713FF1232F23F100A7C3C5 /* GrowthDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FF0232F23F100A7C3C5 /* GrowthDiaryUITests.swift */; };
@@ -21,6 +20,8 @@
 		807261062330702D00A30FF5 /* PreferenceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807261052330702D00A30FF5 /* PreferenceUtil.swift */; };
 		8072615D2331C37C00A30FF5 /* MimiListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072615C2331C37C00A30FF5 /* MimiListController.swift */; };
 		8072615F2331C39400A30FF5 /* GungunListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8072615E2331C39400A30FF5 /* GungunListController.swift */; };
+		80B19925233309B00028F725 /* imageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B19924233309B00028F725 /* imageCell.swift */; };
+		80B1996123331F100028F725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B1996023331F100028F725 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		80713FCD232F23F000A7C3C5 /* GrowthDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowthDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80713FD0232F23F000A7C3C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80713FD5232F23F000A7C3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		80713FD7232F23F000A7C3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80713FDA232F23F000A7C3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80713FDC232F23F000A7C3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80713FE1232F23F000A7C3C5 /* GrowthDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowthDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +61,8 @@
 		807261052330702D00A30FF5 /* PreferenceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreferenceUtil.swift; path = GrowthDiary/Extend/PreferenceUtil.swift; sourceTree = SOURCE_ROOT; };
 		8072615C2331C37C00A30FF5 /* MimiListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimiListController.swift; sourceTree = "<group>"; };
 		8072615E2331C39400A30FF5 /* GungunListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GungunListController.swift; sourceTree = "<group>"; };
+		80B19924233309B00028F725 /* imageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCell.swift; sourceTree = "<group>"; };
+		80B1996023331F100028F725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +113,15 @@
 		80713FCF232F23F000A7C3C5 /* GrowthDiary */ = {
 			isa = PBXGroup;
 			children = (
+				80B199232333093A0028F725 /* Cell */,
 				807260FE233067EC00A30FF5 /* Util */,
 				807260FB233066A200A30FF5 /* Extend */,
 				80713FFE232F244500A7C3C5 /* Controller */,
 				80713FD0232F23F000A7C3C5 /* AppDelegate.swift */,
 				80713FD4232F23F000A7C3C5 /* Main.storyboard */,
-				80713FD7232F23F000A7C3C5 /* Assets.xcassets */,
 				80713FD9232F23F000A7C3C5 /* LaunchScreen.storyboard */,
 				80713FDC232F23F000A7C3C5 /* Info.plist */,
+				80B1996023331F100028F725 /* Assets.xcassets */,
 			);
 			path = GrowthDiary;
 			sourceTree = "<group>";
@@ -168,6 +171,14 @@
 				807261052330702D00A30FF5 /* PreferenceUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		80B199232333093A0028F725 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80B19924233309B00028F725 /* imageCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80713FDB232F23F000A7C3C5 /* LaunchScreen.storyboard in Resources */,
-				80713FD8232F23F000A7C3C5 /* Assets.xcassets in Resources */,
+				80B1996123331F100028F725 /* Assets.xcassets in Resources */,
 				80713FD6232F23F000A7C3C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +319,7 @@
 				8072610423306DE800A30FF5 /* HomeController.swift in Sources */,
 				807261022330684E00A30FF5 /* Constant.swift in Sources */,
 				80714001232F24B700A7C3C5 /* LoginController.swift in Sources */,
+				80B19925233309B00028F725 /* imageCell.swift in Sources */,
 				80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */,
 				8072615D2331C37C00A30FF5 /* MimiListController.swift in Sources */,
 			);
