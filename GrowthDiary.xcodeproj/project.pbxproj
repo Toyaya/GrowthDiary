@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80192B2F233700B5003665C9 /* ImageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80192B2E233700B5003665C9 /* ImageDetailController.swift */; };
 		80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80713FD0232F23F000A7C3C5 /* AppDelegate.swift */; };
 		80713FD6232F23F000A7C3C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80713FD4232F23F000A7C3C5 /* Main.storyboard */; };
 		80713FDB232F23F000A7C3C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80713FD9232F23F000A7C3C5 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80192B2E233700B5003665C9 /* ImageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailController.swift; sourceTree = "<group>"; };
 		80713FCD232F23F000A7C3C5 /* GrowthDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowthDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80713FD0232F23F000A7C3C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80713FD5232F23F000A7C3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				80714000232F24B700A7C3C5 /* SplashController.swift */,
 				8072610323306DE800A30FF5 /* HomeController.swift */,
 				8072615C2331C37C00A30FF5 /* MimiListController.swift */,
+				80192B2E233700B5003665C9 /* ImageDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				807261022330684E00A30FF5 /* Constant.swift in Sources */,
 				80714001232F24B700A7C3C5 /* LoginController.swift in Sources */,
 				80B19925233309B00028F725 /* imageCell.swift in Sources */,
+				80192B2F233700B5003665C9 /* ImageDetailController.swift in Sources */,
 				80713FD1232F23F000A7C3C5 /* AppDelegate.swift in Sources */,
 				8072615D2331C37C00A30FF5 /* MimiListController.swift in Sources */,
 			);

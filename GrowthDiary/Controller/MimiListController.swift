@@ -10,6 +10,11 @@ import UIKit
 
 class mimiListController: UIViewController {
     
+    @IBAction func backToHomeClick(_ sender: Any) {
+        AppDelegate.shared.toHome()
+        
+    }
+    
     @IBAction func onLogoutClick(_ sender: Any) {
         let controller = UIAlertController(title: "提示", message: "你确定退出吗？", preferredStyle: .alert)
         
@@ -58,17 +63,22 @@ class mimiListController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        //获取用户点击的索引
+        let indexPath = tableView.indexPathForSelectedRow!
+        
+        //获取对应位置的数据
+        let data = dataArray[indexPath.row]
+        
+        //获取跳转的控制器
+        let controller = segue.destination as! ImageDetailController
+        
+        controller.id = data
     }
-    */
 
 }
+
+
 
 extension mimiListController:UITableViewDataSource,UITableViewDelegate{
     //返回总数
